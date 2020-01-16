@@ -2,6 +2,10 @@
 
 require "bundler/setup"
 require "fullstackory_adapter_pattern"
+require "section_a_adapter_pattern"
+require "section_b_adapter_pattern"
+require "section_c_adapter_pattern"
+require "section_d_adapter_pattern"
 
 # You can add fixtures and/or initialization code here to make experimenting
 # with your gem easier. You can also use a different console, if you like.
