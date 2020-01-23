@@ -36,7 +36,7 @@ end
 # we want to adapt the interface to a common interface.
 class FakeData
   def name
-    Faker::Name.unique.name
+    Faker::Name.unique.name # if we want to swap out Faker, we can easily
   end
 end
 
