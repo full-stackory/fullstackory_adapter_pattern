@@ -1,3 +1,4 @@
+# these tests should be green
 require "spec_helper"
 
 describe SectionBAdapterPattern do

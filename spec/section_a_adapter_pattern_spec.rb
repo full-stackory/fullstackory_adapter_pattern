@@ -1,5 +1,6 @@
 require "spec_helper"
 
+# these these should be green
 describe SectionAAdapterPattern do
   it "outputs intro text when intro method is called" do
     section_a = SectionAAdapterPattern.new()

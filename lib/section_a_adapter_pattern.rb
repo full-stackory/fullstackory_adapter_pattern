@@ -1,3 +1,5 @@
+# TODO: add some comments to have students try things in the console 
+
 require "fullstackory_adapter_pattern/version"
 # This is an intro to the adaptor pattern
 # The adapter can provide an interface for different classes to work together

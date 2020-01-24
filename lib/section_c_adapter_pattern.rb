@@ -23,7 +23,7 @@ class SectionCAdapterPattern
 end
 
 
-# The A class is the 'adaptee'
+# The A class is the 'adaptee' # note change to  W X Y Z
 class A
   def some_function
     # code here

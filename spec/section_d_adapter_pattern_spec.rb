@@ -1,3 +1,4 @@
+# comment here to just ask them to write tests
 require "spec_helper"
 
 describe SectionDAdapterPattern do

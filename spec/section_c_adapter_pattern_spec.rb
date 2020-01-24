@@ -1,3 +1,4 @@
+# these should be red 
 require "spec_helper"
 
 describe SectionCAdapterPattern do
