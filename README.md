@@ -46,4 +46,43 @@ OR
 
 ## Usage
 
-TODO: add usage instructions here
+### Section A
+#### Setup
+* Open two panes in your terminal both inside the gem directory
+* In one pane run `bin/console`
+* To start in your console run `SectionAAdapterPattern.intro` to get started
+* In the other pane run `rake spec SPEC=spec/section_a_adapter_pattern_spec.rb`
+### Get Started
+* Now you checkout the code and comments in `lib/section_a_adapter_pattern.rb`
+* Walk through the code and comments to get familiar with the Adapter Pattern
+* The tests should be green when you run them for the first time
+* Read over the tests `spec/section_a_adapter_pattern_spec.rb`
+
+### Section B
+#### Setup
+* Setup in the same way as for section A
+### Get Started
+* Now you checkout the code and comments in `lib/section_b_adapter_pattern.rb`
+* Walk through the code and comments to see an example of the Adapter Pattern
+* The tests should be green when you run them for the first time
+* Read over the tests `spec/section_b_adapter_pattern_spec.rb`
+
+### Section C
+#### Setup
+* Setup in the same way as for section A and B
+### Get Started
+* Now you checkout the code and comments in `lib/section_c_adapter_pattern.rb`
+* Walk through the code and comments to see skeleton of the Adapter Pattern
+* The tests should be red when you run them for the first time
+* Work on updating the tests and code so that all of them pass
+* Dig in and make the implementation your own
+
+### Section D
+#### Setup
+* Setup in the same way as for section A, B and C
+### Get Started
+* Now you checkout the code and comments in `lib/section_d_adapter_pattern.rb`
+* Walk through the code and comments to see a description of a feature
+* There is only one test, for the intro function
+* Work on writing tests and code so that your feature works are has tests
+* Dig in and remember to read to documentation for your dependencies
