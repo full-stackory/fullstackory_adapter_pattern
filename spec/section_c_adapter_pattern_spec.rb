@@ -7,7 +7,7 @@ describe SectionCAdapterPattern do
 
     def test_print
       puts <<-HEREDOC
-        some c intro text
+        Now apply what you worked on in Section A and Section B
       HEREDOC
     end
     expect(section_c.intro).to eq(test_print)
