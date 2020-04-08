@@ -1,4 +1,4 @@
-# these should be red 
+# these should be red
 require "spec_helper"
 
 describe SectionCAdapterPattern do
@@ -15,21 +15,21 @@ describe SectionCAdapterPattern do
 
   it "has an adapter which functions" do
     # TODO: add test here
-    expect(true).to eq(true)
+    expect(true).to eq(false)
   end
 
   it "has an adaptee which functions" do
     # TODO: add test here
-    expect(true).to eq(true)
+    expect(true).to eq(false)
   end
 
   it "has a target which functions" do
     # TODO: add test here
-    expect(true).to eq(true)
+    expect(true).to eq(false)
   end
 
   it "is a client which utilizes the adapter pattern" do
     # TODO: add test here
-    expect(true).to eq(true)
+    expect(true).to eq(false)
   end
 end
