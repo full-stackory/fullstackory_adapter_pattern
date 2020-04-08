@@ -3,7 +3,7 @@ require "spec_helper"
 # these these should be green
 describe SectionAAdapterPattern do
   it "outputs intro text when intro method is called" do
-    section_a = SectionAAdapterPattern.new()
+    section_a = SectionAAdapterPattern.new
 
     def test_print
       puts <<-HEREDOC
@@ -17,22 +17,25 @@ describe SectionAAdapterPattern do
   end
 
   it "has an adapter which functions" do
-    # TODO: add test here
-    expect(true).to eq(true)
+    sd = Screwdriver.new
+    sd_adapter = ScrewdriverAdapter.new(sd)
+    expect(sd_adapter.use_device).to eq(true)
   end
 
   it "has an adaptee which functions" do
-    # TODO: add test here
-    expect(true).to eq(true)
+    sd = Screwdriver.new
+    expect(sd.drive).to eq(true)
   end
 
   it "has a target which functions" do
-    # TODO: add test here
-    expect(true).to eq(true)
+    sd = Screwdriver.new
+    sd_adapter = ScrewdriverAdapter.new(sd)
+    d = Device.new(sd_adapter)
+    expect(d.use_device).to eq(true)
   end
 
   it "is a client which utilizes the adapter pattern" do
-    # TODO: add test here
-    expect(true).to eq(true)
+    a = SectionAAdapterPattern.new
+    expect(a.use_our_target_with_adapter).to eq(true)
   end
 end

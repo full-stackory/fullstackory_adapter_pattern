@@ -1,7 +1,7 @@
 # Remember you can run bin/console to explore the code
-# recall you can create a new instance of the class  and call the methods
+# Recall you can create a new instance of the class  and call the methods
 #  Example below:
-# a1 = SectionAAdapterPattern.new(); a1.intro
+# a1 = SectionAAdapterPattern.new; a1.intro
 
 require "fullstackory_adapter_pattern/version"
 # This is an intro to the adaptor pattern
@@ -29,27 +29,30 @@ class SectionAAdapterPattern
   end
 
   def use_our_target_with_adapter
-    # here in the client we instantiate a Screwdriver & pass it to a Screwdriver adapter
-    # then pass the Screwdriver adapter into our 'target', an instance of Device
+    # Here in the client we instantiate a Screwdriver,
+    # and pass it to a Screwdriver adapter
+    # Then pass the Screwdriver adapter into our 'target', an instance of Device
     screwdriver = Screwdriver.new
     screwdriver_adapter = ScrewdriverAdapter.new(screwdriver)
     device = Device.new(screwdriver_adapter)
 
-    # We can now use the Device and underneath a Screwdriver is driving.
+    # We can now use the Device and underneath a Screwdriver is driving
     device.use_device
   end
 end
 
 # The Screwdriver class is the 'adaptee'
-# we want to adapt the interface to a common, 'Device' interface.
+# We want to adapt the interface to a common, 'Device' interface
 class Screwdriver
   def drive
-    # code that drives a screw goes here.
+    # Code that drives a screw goes here
+    # In this case we will only return true when drive is called
+    true
   end
 end
 
 # The Device class is the 'Target'
-# we want to use this interface
+# We want to use this interface
 class Device
   def initialize(adapter)
     @adapter = adapter
@@ -66,7 +69,7 @@ class ScrewdriverAdapter
     @screwdriver = screwdriver
   end
 
-  # the use_device method wraps the Screwdriver #drive method
+  # The use_device method wraps the Screwdriver #drive method
   def use_device
     @screwdriver.drive
   end
