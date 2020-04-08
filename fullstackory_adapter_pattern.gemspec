@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{ a short summary, because Rubygems requires one.}
   spec.description   = %q{ a longer description or delete this line.}
-  spec.homepage      = "https://github.com/jks8787/fullstackory_adapter_pattern"
+  spec.homepage      = "https://github.com/full-stackory/fullstackory_adapter_pattern"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.

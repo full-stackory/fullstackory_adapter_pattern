@@ -1,4 +1,7 @@
-# TODO: add some comments to have students try things in the console 
+# Remember you can run bin/console to explore the code
+# recall you can create a new instance of the class  and call the methods
+#  Example below:
+# a1 = SectionAAdapterPattern.new(); a1.intro
 
 require "fullstackory_adapter_pattern/version"
 # This is an intro to the adaptor pattern
