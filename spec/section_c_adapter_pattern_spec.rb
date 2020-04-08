@@ -1,4 +1,4 @@
-# these should be red
+# these should be red when you start - fill them in as you write the code
 require "spec_helper"
 
 describe SectionCAdapterPattern do
