@@ -1,4 +1,4 @@
-# comment here to just ask them to write tests
+ # Write tests below as you write the code
 require "spec_helper"
 
 describe SectionDAdapterPattern do
@@ -7,7 +7,7 @@ describe SectionDAdapterPattern do
 
     def test_print
       puts <<-HEREDOC
-        section d intro text
+        Now you need to slove a problem with your own code
       HEREDOC
     end
     expect(section_d.intro).to eq(test_print)
